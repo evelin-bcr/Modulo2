@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-clase",
+  "version": "1.0.0",
+  "description": "Proyecto de clase bootcamp desarrollo web full stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Evelyn Becerra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

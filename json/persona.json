@@ -1,0 +1,15 @@
+{
+    "id":1,
+    "primer_nombre": "Evelyn",
+    "segundo_nombre": "Yiceth",
+    "primer_apellido": "Becerra",
+    "segundo apellido": "Bocanegra",
+    "edad": 28,
+    "direccion": {
+        "pais": "Colombia",
+        "ciudad": "Bogotá"
+    },
+    "hobbies": ["series", "musica", "caminar"],
+    "esCasado": false
+
+}
