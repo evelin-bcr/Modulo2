@@ -1,12 +1,18 @@
-import express from 'express';
-import { getAllUsers, postUser, putUserById, deleteUserById } from '../controllers/users.controller.js';
+import express from "express";
+import { postUser, getAllUsers, putUserById, deleteUserById } from "../controllers/users.controller.js";
 
-export const UserRouter = express.Router();
 
-UserRouter.get('/', getAllUsers);
+// 2 Configurar las rutas.
+export const userRouter = express.Router();
 
-UserRouter.post('/',postUser);
+// Ruta para el POST
+userRouter.post("/", postUser);
 
-UserRouter.put('/:id', putUserById);
+// Ruta para el GET
+userRouter.get("/", getAllUsers);
 
-UserRouter.delete('/:id', deleteUserById);
+// Ruta para el PUT
+userRouter.put("/:id", putUserById);
+
+// Ruta para el DELETE
+userRouter.delete("/:id", deleteUserById);
