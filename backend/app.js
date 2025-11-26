@@ -36,10 +36,10 @@ app.use("/login", loginRouter);
 
 
 // Servir el frontend
-app.use(express.static(path.join(_dirname, "dist", "frontend", "browser")));
+app.use(express.static(path.join(_dirname, "dist", "fronted", "browser")));
 
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(_dirname, "dist", "frontend", "browser", "index.html"));
+  res.sendFile(path.join(_dirname, "dist", "fronted", "browser", "index.html"));
 });
 
 
